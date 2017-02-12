@@ -1,0 +1,36 @@
+{
+	"version": 3,
+	"file": "../scss/main.css",
+	"sources": [
+		"../scss/main.scss",
+		"../scss/base/_variables.scss",
+		"../scss/base/_normalise.scss",
+		"../scss/base/_mixins.scss",
+		"../scss/base/_base.scss",
+		"../scss/layouts/_footer.scss",
+		"../scss/layouts/_header.scss",
+		"../scss/layouts/_nav.scss",
+		"../scss/modules/_blocks.scss",
+		"../scss/modules/_buttons.scss",
+		"../scss/modules/_components.scss",
+		"../scss/modules/_sections.scss",
+		"../scss/modules/_typography.scss"
+	],
+	"sourcesContent": [
+		"/*\r\n\r\nArchitectural Elite Redesign\r\nVersion 1\r\n\r\n/*\r\n\r\n/* Base files */\r\n\r\n@import 'base/_variables.scss';\r\n@import 'base/_normalise.scss';\r\n@import 'base/_mixins.scss';\r\n@import 'base/_base.scss';\r\n\r\n\r\n\r\n\r\n/* Layout files */\r\n\r\n@import 'layouts/_footer.scss';\r\n@import 'layouts/_header.scss';\r\n@import 'layouts/_nav.scss';\r\n\r\n/* Module files */\r\n\r\n@import 'modules/_blocks.scss';\r\n@import 'modules/_buttons.scss';\r\n@import 'modules/_components.scss';\r\n@import 'modules/_sections.scss';\r\n@import 'modules/_typography.scss';",
+		"$icon-font-size: 2rem;\r\n\r\n/*colour codes*/\r\n\r\n$white: #ffffff;\r\n\r\n$black: #000000;",
+		".logo{\r\n\tmax-width:100px;\r\n\theight:auto;\r\n\t}\r\n\t\r\n.fa-facebook{\r\n\tmargin-left:3px;\r\n\t}\r\n\t\r\n/*sticky footer*/\r\n\r\nhtml{\r\n\tposition:relative;\r\n\tmin-height:100%;\r\n\t}\r\n\t\r\nbody{\r\n\tmargin: 0 0 300px;\r\n\t}\r\n\t\r\nfooter{\r\n\tposition:absolute;\r\n\tleft:0;\r\n\tbottom:0;}",
+		"@mixin add-background($color){\r\n\tbackground:$color;\r\n\t@if $color == $black{\r\n\t\tcolor:$white;\r\n\t} @elseif $color == $white{\r\n\t\tcolor:$black;\r\n\t}\r\n}",
+		".social-media a:hover{\r\n\twidth:80px;\r\n\theight:80px;\r\n\ttransform: scale(1.2);\r\n\t}\r\n\t\r\n.social-media a i:hover{\r\n\tpadding:25px 27px;\r\n\t}\r\n\r\n.social-media a{\r\n\tdisplay:block;\r\n\tfloat:left;\r\n\twidth:70px;\r\n\theight:70px;\r\n\tborder-radius:50px;\r\n\tmargin-right:25px;\r\n\t@include add-background($white)\r\n\ttransition-duration: 0.7s;\r\n    transition-property: transform;\r\n\t}\r\n\r\n\t\r\n.social-media a i{\r\n\tpadding:20px 22px;\r\n\tfont-size:$icon-font-size;\r\n\t}\r\n",
+		"footer{\r\n\twidth:100%;\r\n\theight:300px;\r\n\t@include add-background($black)\r\n\t}",
+		"header{\r\n\twidth:100%;\r\n\tmin-height:250px;}",
+		"",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	"mappings": "AAAA;;;;;;;gBAOgB;ACLhB,gBAAgB;;ACFhB,AAAA,KAAK,CAAA;EACJ,SAAS,EAAC,KAAM;EAChB,MAAM,EAAC,IAAK;CACX;;;AAEF,AAAA,YAAY,CAAA;EACX,WAAW,EAAC,GAAI;CACf;;AAEF,iBAAiB;;AAEjB,AAAA,IAAI,CAAA;EACH,QAAQ,EAAC,QAAS;EAClB,UAAU,EAAC,IAAK;CACf;;;AAEF,AAAA,IAAI,CAAA;EACH,MAAM,EAAE,SAAU;CACjB;;;AAEF,AAAA,MAAM,CAAA;EACL,QAAQ,EAAC,QAAS;EAClB,IAAI,EAAC,CAAE;EACP,MAAM,EAAC,CAAE;CAAE;;;AEvBZ,AAAe,aAAF,CAAC,CAAC,AAAA,MAAM,CAAA;EACpB,KAAK,EAAC,IAAK;EACX,MAAM,EAAC,IAAK;EACZ,SAAS,EAAE,UAAK;CACf;;;AAEF,AAAiB,aAAJ,CAAC,CAAC,CAAC,CAAC,AAAA,MAAM,CAAA;EACtB,OAAO,EAAC,SAAU;CACjB;;;AAEF,AAAc,aAAD,CAAC,CAAC,CAAA;EACd,OAAO,EAAC,KAAM;EACd,KAAK,EAAC,IAAK;EACX,KAAK,EAAC,IAAK;EACX,MAAM,EAAC,IAAK;EACZ,aAAa,EAAC,IAAK;EACnB,YAAY,EAAC,IAAK;EDflB,UAAU,EFGH,OAAO;EECb,KAAK,EFCC,OAAO;EGYd,mBAAmB,EAAE,IAAK;EACvB,mBAAmB,EAAE,SAAU;CACjC;;;AAGF,AAAgB,aAAH,CAAC,CAAC,CAAC,CAAC,CAAA;EAChB,OAAO,EAAC,SAAU;EAClB,SAAS,EHzBO,IAAI;CG0BnB;;AJTF,kBAAkB;;AKjBlB,AAAA,MAAM,CAAA;EACL,KAAK,EAAC,IAAK;EACX,MAAM,EAAC,KAAM;EFDb,UAAU,EFKH,OAAO;EEHb,KAAK,EFCC,OAAO;CIAb;;;ACJF,AAAA,MAAM,CAAA;EACL,KAAK,EAAC,IAAK;EACX,UAAU,EAAC,KAAM;CAAE;;ANqBpB,kBAAkB",
+	"names": []
+}

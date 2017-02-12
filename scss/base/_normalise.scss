@@ -1,0 +1,24 @@
+.logo{
+	max-width:100px;
+	height:auto;
+	}
+	
+.fa-facebook{
+	margin-left:3px;
+	}
+	
+/*sticky footer*/
+
+html{
+	position:relative;
+	min-height:100%;
+	}
+	
+body{
+	margin: 0 0 300px;
+	}
+	
+footer{
+	position:absolute;
+	left:0;
+	bottom:0;}
